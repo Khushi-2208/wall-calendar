@@ -34,7 +34,6 @@ export default function WallCalendar() {
       transition={{ duration: 0.55, ease: [0.25, 0.46, 0.45, 0.94] }}
       style={{ width: "100%", maxWidth: 380 }}
     >
-      {/* ── Outer glow / shadow frame ── */}
       <div
         style={{
           position: "relative",
@@ -53,10 +52,10 @@ export default function WallCalendar() {
             zIndex: 1,
           }}
         >
-          {/* hero + spiral */}
+
           <CalendarHeader data={mdata} dir={dir} onPrev={prev} onNext={next} />
 
-          {/* day grid */}
+
           <CalendarGrid
             month={month}
             year={year}
@@ -92,7 +91,6 @@ export default function WallCalendar() {
             onClearRange={clearRange}
           />
 
-          {/* ── Accent bottom strip (animates on month change) ── */}
           <motion.div
             key={accent}
             initial={{ scaleX: 0 }}

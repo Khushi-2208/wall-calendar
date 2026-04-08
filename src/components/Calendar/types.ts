@@ -6,12 +6,12 @@ export interface DateRange {
 export interface CalNote {
   id:    string;
   text:  string;
-  date:  string;  // "YYYY-MM-DD"
+  date:  string;  
   color: string;
 }
 
 export interface MonthData {
-  month:    number;  // 0–11
+  month:    number;  
   year:     number;
   image:    string;
   imageAlt: string;
