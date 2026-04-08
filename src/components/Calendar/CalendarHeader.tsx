@@ -138,7 +138,7 @@ export default function CalendarHeader({ data, dir, onPrev, onNext }: Props) {
               style={{
                 fontFamily: "var(--font-display)",
                 fontSize: 28,
-                color: data.accent,
+                color: "gray",
                 letterSpacing: "0.04em",
               }}
             >
